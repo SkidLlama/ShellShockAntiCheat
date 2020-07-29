@@ -77,7 +77,7 @@ var extern = function(){
     }
     (async function() {
         let script = await request(`https://shellshock.io/src/shellshock.min.js`);
-        injectInline(attemptPatch(script))
+        injectInline((script))
     })();
 })();
 
